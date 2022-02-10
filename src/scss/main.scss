@@ -1,0 +1,106 @@
+@use '/src/scss/base/reset';
+
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+};
+
+.heading {
+    margin-top: 5rem;
+}
+
+h1 {
+    color: var(--VeryDarkMagenta);
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    width: 65%;
+    margin: 0 auto 2rem;
+}
+
+.light {
+    color: rgb(136, 134, 134);
+    font-family: 'Spartan', sans-serif;
+    width: 85%;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    background: blueviolet;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+
+.star {
+    size: 15px;
+}
+
+.rating {
+    flex-basis: 0;
+    color: var(--VeryDarkMagenta);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    margin: 12px;
+    gap: 2rem;
+    
+}
+
+.row {
+    flex-direction: row;
+}
+
+.flex-container {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.purple-card {
+    background: var(--VeryDarkMagenta);
+    border-radius: 10px;
+}
+
+.selfie {
+    border-radius: 50%;
+    size: 10px;
+}
+
+.top-card {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 2em;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.name {
+    color: var(--White);
+}
+
+.verified {
+    color: var(--DarkGrayishMagenta);
+}
+
+.review {
+    color: var(--White);
+    font-family: 'Spartan', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}

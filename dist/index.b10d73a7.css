@@ -1,0 +1,176 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.heading {
+  margin-top: 5rem;
+}
+
+h1 {
+  color: var(--VeryDarkMagenta);
+  text-align: center;
+  font-family: "Spartan", sans-serif;
+  width: 65%;
+  margin: 0 auto 2rem;
+}
+
+.light {
+  color: #888686;
+  font-family: "Spartan", sans-serif;
+  width: 85%;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  background: blueviolet;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+
+.star {
+  size: 15px;
+}
+
+.rating {
+  flex-basis: 0;
+  color: var(--VeryDarkMagenta);
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  margin: 12px;
+  gap: 2rem;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.flex-container {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.purple-card {
+  background: var(--VeryDarkMagenta);
+  border-radius: 10px;
+}
+
+.selfie {
+  border-radius: 50%;
+  size: 10px;
+}
+
+.top-card {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2em;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.name {
+  color: var(--White);
+}
+
+.verified {
+  color: var(--DarkGrayishMagenta);
+}
+
+.review {
+  color: var(--White);
+  font-family: "Spartan", sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+/*# sourceMappingURL=index.b10d73a7.css.map */
